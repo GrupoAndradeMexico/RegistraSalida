@@ -1,0 +1,910 @@
+﻿ 
+07/09/2022 10:45:00	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW84W90NG034453' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1238', desde: RegistrarSalida
+07/09/2022 10:45:00	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW84W90NG034453' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1238', desde: RegistrarSalida
+07/09/2022 10:45:00	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 08/09/2022  CCP_CONSCARTERA= 48048 vin: LSJW84W90NG034453, desde: RegistrarSalida
+07/09/2022 10:45:00	La salida de la unidad con vin: LSJW84W90NG034453 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:45:00	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJW84W90NG034453, desde: ProcesaBitacora
+07/09/2022 10:46:00	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJW84W90NG034453.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 10:46:00	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:46:01	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004619507' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001309' where id_bitacora=97728 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:46:01	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:46:01	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJW84W90NG034453.TXT, desde: fsw_Created
+07/09/2022 10:46:01	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJW84W90NG034453.TXT, desde: fsw_Created
+ 
+07/09/2022 10:46:01	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJW84W90NG034453 idsicop: 390001004619507 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJW84W90NG034453.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 10:46:03	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 10:53:00	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3PCAJ5N34PF101720' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='30', desde: RegistrarSalida
+07/09/2022 10:53:00	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3PCAJ5N34PF101720' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='30', desde: RegistrarSalida
+07/09/2022 10:53:00	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 63973 vin: 3PCAJ5N34PF101720, desde: RegistrarSalida
+07/09/2022 10:53:00	La salida de la unidad con vin: 3PCAJ5N34PF101720 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:53:00	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\INFINITIPOLANCO\BusinessProSICOPINFINITIPOL.exe" SICOP GMI GADVAP_Polanco Exporta E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\ parametro_ocioso.txt 3PCAJ5N34PF101720, desde: ProcesaBitacora
+07/09/2022 10:54:01	El archivo : E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 10:54:01	id_usuario: 19, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:54:01	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 163682010200057' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000000029' where id_bitacora=97710 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:54:01	id_maquina: 41, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:54:01	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\INFINITI_POLANCO\\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT, desde: fsw_Created
+07/09/2022 10:54:01	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT, desde: fsw_Created
+ 
+07/09/2022 10:54:01	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3PCAJ5N34PF101720 idsicop: 163682010200057 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT id_maquina: 41, desde: EnviaCorreo
+07/09/2022 10:54:03	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 10:54:21	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3PCAJ5N34PF101720' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='30', desde: RegistrarSalida
+07/09/2022 10:54:21	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3PCAJ5N34PF101720' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='30', desde: RegistrarSalida
+07/09/2022 10:54:21	La salida de la unidad con vin: 3PCAJ5N34PF101720 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:54:21	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\INFINITIPOLANCO\BusinessProSICOPINFINITIPOL.exe" SICOP GMI GADVAP_Polanco Exporta E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\ parametro_ocioso.txt 3PCAJ5N34PF101720, desde: ProcesaBitacora
+07/09/2022 10:55:21	id_usuario: 19, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:55:21	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 163682010200057' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000000029' where id_bitacora=97711 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:55:21	id_maquina: 41, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:55:21	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\INFINITI_POLANCO\\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT, desde: fsw_Created
+07/09/2022 10:55:21	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+ 
+07/09/2022 10:55:41	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJA24W99NN015651' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1285', desde: RegistrarSalida
+07/09/2022 10:55:41	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJA24W99NN015651' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1285', desde: RegistrarSalida
+07/09/2022 10:55:41	La salida de la unidad con vin: LSJA24W99NN015651 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:55:42	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJA24W99NN015651, desde: ProcesaBitacora
+07/09/2022 10:56:42	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA24W99NN015651.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 10:56:42	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:56:42	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004588118' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001383' where id_bitacora=97707 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:56:42	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:56:42	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJA24W99NN015651.TXT, desde: fsw_Created
+07/09/2022 10:56:42	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA24W99NN015651.TXT, desde: fsw_Created
+ 
+07/09/2022 10:56:42	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJA24W99NN015651 idsicop: 390001004588118 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJA24W99NN015651.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 10:56:44	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 10:57:02	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJA24U67NN115658' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1260', desde: RegistrarSalida
+07/09/2022 10:57:02	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJA24U67NN115658' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1260', desde: RegistrarSalida
+07/09/2022 10:57:02	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 59865 vin: LSJA24U67NN115658, desde: RegistrarSalida
+07/09/2022 10:57:02	La salida de la unidad con vin: LSJA24U67NN115658 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:57:02	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJA24U67NN115658, desde: ProcesaBitacora
+07/09/2022 10:58:02	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA24U67NN115658.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 10:58:02	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:58:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004612240' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001333' where id_bitacora=97714 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:58:02	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:58:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJA24U67NN115658.TXT, desde: fsw_Created
+07/09/2022 10:58:02	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA24U67NN115658.TXT, desde: fsw_Created
+ 
+07/09/2022 10:58:02	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJA24U67NN115658 idsicop: 390001004612240 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJA24U67NN115658.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 10:58:05	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 10:58:23	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW74U99NZ210491' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1256', desde: RegistrarSalida
+07/09/2022 10:58:23	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW74U99NZ210491' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1256', desde: RegistrarSalida
+07/09/2022 10:58:23	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 59688 vin: LSJW74U99NZ210491, desde: RegistrarSalida
+07/09/2022 10:58:23	La salida de la unidad con vin: LSJW74U99NZ210491 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:58:23	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJW74U99NZ210491, desde: ProcesaBitacora
+07/09/2022 10:59:23	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 10:59:23	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:59:23	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 690001000506746' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001327' where id_bitacora=97715 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:59:23	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 10:59:23	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT, desde: fsw_Created
+07/09/2022 10:59:23	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT, desde: fsw_Created
+ 
+07/09/2022 10:59:23	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJW74U99NZ210491 idsicop: 690001000506746 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 10:59:25	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 10:59:43	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW74U99NZ210491' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1256', desde: RegistrarSalida
+07/09/2022 10:59:43	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW74U99NZ210491' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1256', desde: RegistrarSalida
+07/09/2022 10:59:43	La salida de la unidad con vin: LSJW74U99NZ210491 ha quedado registrada., desde: RegistraSalida
+07/09/2022 10:59:43	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJW74U99NZ210491, desde: ProcesaBitacora
+07/09/2022 11:00:43	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:00:43	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 690001000506746' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001327' where id_bitacora=97727 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:00:43	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:00:43	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT, desde: fsw_Created
+07/09/2022 11:00:43	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+ 
+07/09/2022 11:01:04	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSJA36E6XNZ208514' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1250', desde: RegistrarSalida
+07/09/2022 11:01:04	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSJA36E6XNZ208514' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1250', desde: RegistrarSalida
+07/09/2022 11:01:04	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 08/09/2022  CCP_CONSCARTERA= 59753 vin: LSJA36E6XNZ208514, desde: RegistrarSalida
+07/09/2022 11:01:04	La salida de la unidad con vin: LSJA36E6XNZ208514 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:01:04	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJA36E6XNZ208514, desde: ProcesaBitacora
+07/09/2022 11:02:04	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:02:04	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:02:04	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004595825' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001322' where id_bitacora=97738 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:02:04	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:02:04	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT, desde: fsw_Created
+07/09/2022 11:02:04	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT, desde: fsw_Created
+ 
+07/09/2022 11:02:04	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJA36E6XNZ208514 idsicop: 390001004595825 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 11:02:06	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:02:24	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSJA36E6XNZ208514' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1250', desde: RegistrarSalida
+07/09/2022 11:02:24	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSJA36E6XNZ208514' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1250', desde: RegistrarSalida
+07/09/2022 11:02:24	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 08/09/2022  CCP_CONSCARTERA= 59753 vin: LSJA36E6XNZ208514, desde: RegistrarSalida
+07/09/2022 11:02:24	La salida de la unidad con vin: LSJA36E6XNZ208514 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:02:24	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJA36E6XNZ208514, desde: ProcesaBitacora
+07/09/2022 11:03:24	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:03:24	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004595825' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001322' where id_bitacora=97739 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:03:24	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:03:25	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT, desde: fsw_Created
+07/09/2022 11:03:25	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+ 
+07/09/2022 11:03:45	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSJA36E6XNZ208514' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1250', desde: RegistrarSalida
+07/09/2022 11:03:45	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSJA36E6XNZ208514' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1250', desde: RegistrarSalida
+07/09/2022 11:03:45	La salida de la unidad con vin: LSJA36E6XNZ208514 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:03:45	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJA36E6XNZ208514, desde: ProcesaBitacora
+07/09/2022 11:04:45	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:04:45	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:04:45	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004595825' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001322' where id_bitacora=97740 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:04:45	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:04:45	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT, desde: fsw_Created
+07/09/2022 11:04:45	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJA36E6XNZ208514.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+ 
+07/09/2022 11:05:05	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:05:05	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:05:06	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 15067 vin: 3C6SRADGXNG217836, desde: RegistrarSalida
+07/09/2022 11:05:06	La salida de la unidad con vin: 3C6SRADGXNG217836 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:05:06	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADGXNG217836, desde: ProcesaBitacora
+07/09/2022 11:06:06	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:06:06	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:06:06	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021196' where id_bitacora=97708 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:06:06	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:06:06	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+07/09/2022 11:06:06	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+ 
+07/09/2022 11:06:26	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:06:26	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:06:27	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 08/09/2022  CCP_CONSCARTERA= 15067 vin: 3C6SRADGXNG217836, desde: RegistrarSalida
+07/09/2022 11:06:27	La salida de la unidad con vin: 3C6SRADGXNG217836 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:06:27	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADGXNG217836, desde: ProcesaBitacora
+07/09/2022 11:07:27	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:07:28	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021196' where id_bitacora=97716 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:07:28	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:07:28	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+07/09/2022 11:07:28	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+ 
+07/09/2022 11:07:48	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG217847' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:07:48	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG217847' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:07:49	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 15073 vin: 3C6SRADG4NG217847, desde: RegistrarSalida
+07/09/2022 11:07:49	La salida de la unidad con vin: 3C6SRADG4NG217847 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:07:49	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG4NG217847, desde: ProcesaBitacora
+07/09/2022 11:08:49	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG217847.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:08:49	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:08:49	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021197' where id_bitacora=97717 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:08:49	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:08:49	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG217847.TXT, desde: fsw_Created
+07/09/2022 11:08:49	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG217847.TXT, desde: fsw_Created
+ 
+07/09/2022 11:09:09	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG1NG217871' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:09:09	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG1NG217871' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:09:10	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 15085 vin: 3C6SRADG1NG217871, desde: RegistrarSalida
+07/09/2022 11:09:10	La salida de la unidad con vin: 3C6SRADG1NG217871 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:09:10	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG1NG217871, desde: ProcesaBitacora
+07/09/2022 11:10:10	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG1NG217871.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:10:10	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:10:10	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021198' where id_bitacora=97718 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:10:10	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:10:10	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG1NG217871.TXT, desde: fsw_Created
+07/09/2022 11:10:10	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG1NG217871.TXT, desde: fsw_Created
+ 
+07/09/2022 11:10:31	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217835' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:10:31	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217835' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:10:32	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 15091 vin: 3C6SRADG8NG217835, desde: RegistrarSalida
+07/09/2022 11:10:32	La salida de la unidad con vin: 3C6SRADG8NG217835 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:10:32	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG8NG217835, desde: ProcesaBitacora
+07/09/2022 11:11:32	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217835.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:11:32	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:11:32	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021199' where id_bitacora=97719 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:11:32	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:11:32	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217835.TXT, desde: fsw_Created
+07/09/2022 11:11:32	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217835.TXT, desde: fsw_Created
+ 
+07/09/2022 11:11:52	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217866' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:11:52	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217866' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:11:53	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 23791 vin: 3C6SRADG8NG217866, desde: RegistrarSalida
+07/09/2022 11:11:53	La salida de la unidad con vin: 3C6SRADG8NG217866 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:11:53	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG8NG217866, desde: ProcesaBitacora
+07/09/2022 11:12:53	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217866.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:12:53	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:12:53	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021200' where id_bitacora=97720 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:12:53	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:12:53	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217866.TXT, desde: fsw_Created
+07/09/2022 11:12:53	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217866.TXT, desde: fsw_Created
+ 
+07/09/2022 11:13:13	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG9NG240007' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:13:13	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG9NG240007' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:13:14	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 37356 vin: 3C6SRADG9NG240007, desde: RegistrarSalida
+07/09/2022 11:13:14	La salida de la unidad con vin: 3C6SRADG9NG240007 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:13:14	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG9NG240007, desde: ProcesaBitacora
+07/09/2022 11:14:14	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG9NG240007.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:14:14	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:14:14	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021201' where id_bitacora=97721 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:14:14	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:14:14	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG9NG240007.TXT, desde: fsw_Created
+07/09/2022 11:14:14	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG9NG240007.TXT, desde: fsw_Created
+ 
+07/09/2022 11:14:35	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG240004' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:14:35	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG240004' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:14:36	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 40083 vin: 3C6SRADG3NG240004, desde: RegistrarSalida
+07/09/2022 11:14:36	La salida de la unidad con vin: 3C6SRADG3NG240004 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:14:36	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG3NG240004, desde: ProcesaBitacora
+07/09/2022 11:15:36	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG240004.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:15:36	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:15:36	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021202' where id_bitacora=97722 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:15:36	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:15:36	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG240004.TXT, desde: fsw_Created
+07/09/2022 11:15:36	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG240004.TXT, desde: fsw_Created
+ 
+07/09/2022 11:15:56	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG239993' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:15:56	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG239993' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:15:57	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 41580 vin: 3C6SRADG4NG239993, desde: RegistrarSalida
+07/09/2022 11:15:57	La salida de la unidad con vin: 3C6SRADG4NG239993 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:15:57	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG4NG239993, desde: ProcesaBitacora
+07/09/2022 11:16:57	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG239993.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:16:57	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:16:57	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021203' where id_bitacora=97723 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:16:57	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:16:57	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG239993.TXT, desde: fsw_Created
+07/09/2022 11:16:57	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG239993.TXT, desde: fsw_Created
+ 
+07/09/2022 11:17:18	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG239998' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:17:18	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG239998' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:17:19	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 41586 vin: 3C6SRADG3NG239998, desde: RegistrarSalida
+07/09/2022 11:17:19	La salida de la unidad con vin: 3C6SRADG3NG239998 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:17:19	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG3NG239998, desde: ProcesaBitacora
+07/09/2022 11:18:19	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG239998.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:18:19	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:18:19	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021204' where id_bitacora=97724 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:18:19	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:18:19	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG239998.TXT, desde: fsw_Created
+07/09/2022 11:18:19	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG239998.TXT, desde: fsw_Created
+ 
+07/09/2022 11:18:39	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217852' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:18:39	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217852' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:18:40	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 15079 vin: 3C6SRADG8NG217852, desde: RegistrarSalida
+07/09/2022 11:18:40	La salida de la unidad con vin: 3C6SRADG8NG217852 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:18:40	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG8NG217852, desde: ProcesaBitacora
+07/09/2022 11:19:40	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217852.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:19:40	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:19:40	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021205' where id_bitacora=97725 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:19:40	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:19:40	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217852.TXT, desde: fsw_Created
+07/09/2022 11:19:40	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217852.TXT, desde: fsw_Created
+ 
+07/09/2022 11:20:00	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG5NG240005' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:20:00	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG5NG240005' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:20:01	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 40098 vin: 3C6SRADG5NG240005, desde: RegistrarSalida
+07/09/2022 11:20:01	La salida de la unidad con vin: 3C6SRADG5NG240005 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:20:01	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG5NG240005, desde: ProcesaBitacora
+07/09/2022 11:21:01	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG5NG240005.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:21:01	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:21:01	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021206' where id_bitacora=97726 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:21:01	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:21:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG5NG240005.TXT, desde: fsw_Created
+07/09/2022 11:21:02	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG5NG240005.TXT, desde: fsw_Created
+ 
+07/09/2022 11:21:22	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG259486' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:21:22	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG259486' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:21:23	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 51880 vin: 3C6SRADGXNG259486, desde: RegistrarSalida
+07/09/2022 11:21:23	La salida de la unidad con vin: 3C6SRADGXNG259486 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:21:23	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADGXNG259486, desde: ProcesaBitacora
+07/09/2022 11:22:23	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG259486.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:22:23	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:22:23	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021207' where id_bitacora=97729 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:22:23	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:22:23	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG259486.TXT, desde: fsw_Created
+07/09/2022 11:22:23	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG259486.TXT, desde: fsw_Created
+ 
+07/09/2022 11:22:43	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG0MG710851' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:22:43	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG0MG710851' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:22:44	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 215698 vin: 3C6SRBDG0MG710851, desde: RegistrarSalida
+07/09/2022 11:22:44	La salida de la unidad con vin: 3C6SRBDG0MG710851 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:22:44	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG0MG710851, desde: ProcesaBitacora
+07/09/2022 11:23:44	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710851.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:23:44	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:23:45	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021208' where id_bitacora=97730 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:23:45	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:23:45	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710851.TXT, desde: fsw_Created
+07/09/2022 11:23:45	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710851.TXT, desde: fsw_Created
+ 
+07/09/2022 11:23:45	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG0MG710851 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710851.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:23:47	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:24:05	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG1MG710857' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:24:05	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG1MG710857' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:24:06	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 215712 vin: 3C6SRBDG1MG710857, desde: RegistrarSalida
+07/09/2022 11:24:06	La salida de la unidad con vin: 3C6SRBDG1MG710857 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:24:06	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG1MG710857, desde: ProcesaBitacora
+07/09/2022 11:25:06	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG1MG710857.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:25:06	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:25:06	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021209' where id_bitacora=97731 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:25:06	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:25:06	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG1MG710857.TXT, desde: fsw_Created
+07/09/2022 11:25:06	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG1MG710857.TXT, desde: fsw_Created
+ 
+07/09/2022 11:25:06	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG1MG710857 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG1MG710857.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:25:08	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:25:26	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG2MG710656' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:25:26	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG2MG710656' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:25:27	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 216219 vin: 3C6SRBDG2MG710656, desde: RegistrarSalida
+07/09/2022 11:25:27	La salida de la unidad con vin: 3C6SRBDG2MG710656 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:25:27	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG2MG710656, desde: ProcesaBitacora
+07/09/2022 11:26:28	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710656.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:26:28	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:26:28	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021210' where id_bitacora=97732 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:26:28	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:26:28	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710656.TXT, desde: fsw_Created
+07/09/2022 11:26:28	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710656.TXT, desde: fsw_Created
+ 
+07/09/2022 11:26:28	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG2MG710656 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710656.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:26:30	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:26:48	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG2MG710690' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:26:48	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG2MG710690' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:26:49	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 215678 vin: 3C6SRBDG2MG710690, desde: RegistrarSalida
+07/09/2022 11:26:49	La salida de la unidad con vin: 3C6SRBDG2MG710690 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:26:49	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG2MG710690, desde: ProcesaBitacora
+07/09/2022 11:27:49	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710690.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:27:49	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:27:49	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021211' where id_bitacora=97733 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:27:49	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:27:49	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710690.TXT, desde: fsw_Created
+07/09/2022 11:27:49	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710690.TXT, desde: fsw_Created
+ 
+07/09/2022 11:27:49	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG2MG710690 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710690.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:27:51	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:28:09	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG0MG710803' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:28:10	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG0MG710803' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:28:11	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 220142 vin: 3C6SRBDG0MG710803, desde: RegistrarSalida
+07/09/2022 11:28:11	La salida de la unidad con vin: 3C6SRBDG0MG710803 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:28:11	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG0MG710803, desde: ProcesaBitacora
+07/09/2022 11:29:11	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710803.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:29:11	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:29:11	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021212' where id_bitacora=97734 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:29:11	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:29:11	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710803.TXT, desde: fsw_Created
+07/09/2022 11:29:11	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710803.TXT, desde: fsw_Created
+ 
+07/09/2022 11:29:11	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG0MG710803 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710803.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:29:13	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:29:31	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG2MG710768' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:29:31	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG2MG710768' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:29:32	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 220947 vin: 3C6SRBDG2MG710768, desde: RegistrarSalida
+07/09/2022 11:29:32	La salida de la unidad con vin: 3C6SRBDG2MG710768 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:29:32	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG2MG710768, desde: ProcesaBitacora
+07/09/2022 11:30:32	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710768.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:30:32	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:30:32	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021213' where id_bitacora=97735 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:30:32	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:30:32	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710768.TXT, desde: fsw_Created
+07/09/2022 11:30:32	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710768.TXT, desde: fsw_Created
+ 
+07/09/2022 11:30:32	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG2MG710768 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG2MG710768.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:30:34	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:30:53	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG3MG710620' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:30:53	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG3MG710620' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:30:54	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 216202 vin: 3C6SRBDG3MG710620, desde: RegistrarSalida
+07/09/2022 11:30:54	La salida de la unidad con vin: 3C6SRBDG3MG710620 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:30:54	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG3MG710620, desde: ProcesaBitacora
+07/09/2022 11:31:54	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG3MG710620.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:31:54	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:31:54	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021214' where id_bitacora=97736 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:31:54	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:31:54	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG3MG710620.TXT, desde: fsw_Created
+07/09/2022 11:31:54	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG3MG710620.TXT, desde: fsw_Created
+ 
+07/09/2022 11:31:54	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG3MG710620 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG3MG710620.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:31:56	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:32:14	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG0MG710705' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:32:14	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRBDG0MG710705' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 11:32:15	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 215690 vin: 3C6SRBDG0MG710705, desde: RegistrarSalida
+07/09/2022 11:32:15	La salida de la unidad con vin: 3C6SRBDG0MG710705 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:32:15	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRBDG0MG710705, desde: ProcesaBitacora
+07/09/2022 11:33:15	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710705.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:33:15	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:33:15	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021215' where id_bitacora=97737 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:33:15	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:33:15	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710705.TXT, desde: fsw_Created
+07/09/2022 11:33:15	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710705.TXT, desde: fsw_Created
+ 
+07/09/2022 11:33:16	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRBDG0MG710705 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRBDG0MG710705.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 11:33:18	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:33:36	Se seteo la fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '06/09/2022' where PMS_NUMSERIE ='3G1J85DCXFS597876' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '7996', desde: RegistrarSalida
+07/09/2022 11:33:36	Intento : 1 de seteo de fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '06/09/2022' where PMS_NUMSERIE ='3G1J85DCXFS597876' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '7996', desde: RegistrarSalida
+07/09/2022 11:33:37	La salida de la unidad con vin: 3G1J85DCXFS597876 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:33:37	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\CHEVROLET\BusinessProSICOPCHEVROLETAZC.exe" SICOP GMI GAAA_Azcapo Exporta E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\ parametro_ocioso.txt 3G1J85DCXFS597876, desde: ProcesaBitacora
+07/09/2022 11:34:37	El archivo : E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3G1J85DCXFS597876.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:34:37	id_usuario: 18, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:34:37	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 206002005500168' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'BA000001029' where id_bitacora=97712 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:34:37	id_maquina: 11, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:34:37	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\Chevrolet_Azcapotzalco\SEMINUEVOS\SICOP_VENTAS_TEMP_DMS_3G1J85DCXFS597876.TXT, desde: fsw_Created
+07/09/2022 11:34:37	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3G1J85DCXFS597876.TXT, desde: fsw_Created
+07/09/2022 11:34:37	id_maquina: 36, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:34:37	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_3G1J85DCXFS597876.TXT'., desde: fsw_Created
+ 
+07/09/2022 11:34:37	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3G1J85DCXFS597876 idsicop: 206002005500168 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3G1J85DCXFS597876.TXT id_maquina: 36, desde: EnviaCorreo
+07/09/2022 11:34:40	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:34:57	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSGHD52H7ND147296' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='49123', desde: RegistrarSalida
+07/09/2022 11:34:57	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSGHD52H7ND147296' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='49123', desde: RegistrarSalida
+07/09/2022 11:34:58	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 372716 vin: LSGHD52H7ND147296, desde: RegistrarSalida
+07/09/2022 11:34:58	La salida de la unidad con vin: LSGHD52H7ND147296 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:34:58	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\CHEVROLET\BusinessProSICOPCHEVROLETAZC.exe" SICOP GMI GAAA_Azcapo Exporta E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\ parametro_ocioso.txt LSGHD52H7ND147296, desde: ProcesaBitacora
+07/09/2022 11:35:58	El archivo : E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSGHD52H7ND147296.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:35:58	id_usuario: 18, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:35:58	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 171054040402664' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000086871' where id_bitacora=97713 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:35:58	id_maquina: 11, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:35:58	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\Chevrolet_Azcapotzalco\SICOP_VENTAS_TEMP_DMS_LSGHD52H7ND147296.TXT, desde: fsw_Created
+07/09/2022 11:35:58	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSGHD52H7ND147296.TXT, desde: fsw_Created
+07/09/2022 11:35:58	id_maquina: 36, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:35:58	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_LSGHD52H7ND147296.TXT'., desde: fsw_Created
+ 
+07/09/2022 11:35:58	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSGHD52H7ND147296 idsicop: 171054040402664 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSGHD52H7ND147296.TXT id_maquina: 36, desde: EnviaCorreo
+07/09/2022 11:36:00	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:36:19	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='9BD341AB6NY806410' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='2252', desde: RegistrarSalida
+07/09/2022 11:36:19	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='9BD341AB6NY806410' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='2252', desde: RegistrarSalida
+07/09/2022 11:36:20	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 07/09/2022  CCP_CONSCARTERA= 160064 vin: 9BD341AB6NY806410, desde: RegistrarSalida
+07/09/2022 11:36:20	La salida de la unidad con vin: 9BD341AB6NY806410 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:36:20	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR_TEPEPAN\BusinessProSICOPAUTOTEPEPAN.exe" SICOP GMI GAAutoAngarTepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarTepepanRecibidos\VentasBPro\ parametro_ocioso.txt 9BD341AB6NY806410, desde: ProcesaBitacora
+07/09/2022 11:37:20	El archivo : E:\LB\PROGRAMAS\RegistraSalida\AutoAngarTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_9BD341AB6NY806410.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 11:37:20	id_usuario: 14, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:37:20	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004606301' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AG000011524' where id_bitacora=97709 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:37:20	id_maquina: 31, desde: procesaArchivoGeneradoporBPro
+07/09/2022 11:37:20	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AutoAngarChryslerTepepan\\SICOP_VENTAS_TEMP_DMS_9BD341AB6NY806410.TXT, desde: fsw_Created
+07/09/2022 11:37:20	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_9BD341AB6NY806410.TXT, desde: fsw_Created
+ 
+07/09/2022 11:37:20	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 9BD341AB6NY806410 idsicop: 390001004606301 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_9BD341AB6NY806410.TXT id_maquina: 31, desde: EnviaCorreo
+07/09/2022 11:37:22	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 11:37:40	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:37:40	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:37:41	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 19/07/2022  CCP_CONSCARTERA= 195828 vin: afahr6ca6np121412, desde: RegistrarSalida
+07/09/2022 11:37:41	La salida de la unidad con vin: afahr6ca6np121412 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:37:41	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca6np121412, desde: ProcesaBitacora
+07/09/2022 11:38:41	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:39:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:39:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:39:01	La salida de la unidad con vin: afahr6ca6np121412 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:39:01	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca6np121412, desde: ProcesaBitacora
+07/09/2022 11:40:01	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:40:21	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:40:22	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:40:22	La salida de la unidad con vin: afahr6ca9np120190 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:40:22	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca9np120190, desde: ProcesaBitacora
+07/09/2022 11:41:22	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:41:42	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:41:42	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:41:42	La salida de la unidad con vin: afahr6ca9np120190 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:41:42	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca9np120190, desde: ProcesaBitacora
+07/09/2022 11:42:42	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:43:03	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:43:03	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:43:03	La salida de la unidad con vin: afahr6ca6np121412 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:43:03	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca6np121412, desde: ProcesaBitacora
+07/09/2022 11:44:04	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:44:24	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:44:24	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:44:24	La salida de la unidad con vin: afahr6ca6np121412 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:44:24	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca6np121412, desde: ProcesaBitacora
+07/09/2022 11:45:24	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:45:44	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:45:44	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:45:44	La salida de la unidad con vin: afahr6ca9np120190 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:45:44	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca9np120190, desde: ProcesaBitacora
+07/09/2022 11:46:44	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:47:05	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:47:05	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:47:05	La salida de la unidad con vin: afahr6ca9np120190 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:47:05	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca9np120190, desde: ProcesaBitacora
+07/09/2022 11:48:05	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:48:26	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:48:26	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:48:26	La salida de la unidad con vin: afahr6ca6np121412 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:48:26	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca6np121412, desde: ProcesaBitacora
+07/09/2022 11:49:26	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:49:46	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:49:46	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca6np121412' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3348', desde: RegistrarSalida
+07/09/2022 11:49:46	La salida de la unidad con vin: afahr6ca6np121412 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:49:46	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca6np121412, desde: ProcesaBitacora
+07/09/2022 11:50:46	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:51:06	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:51:06	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:51:07	La salida de la unidad con vin: afahr6ca9np120190 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:51:07	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca9np120190, desde: ProcesaBitacora
+07/09/2022 11:52:07	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 11:52:27	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:52:27	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='afahr6ca9np120190' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3349', desde: RegistrarSalida
+07/09/2022 11:52:27	La salida de la unidad con vin: afahr6ca9np120190 ha quedado registrada., desde: RegistraSalida
+07/09/2022 11:52:27	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt afahr6ca9np120190, desde: ProcesaBitacora
+07/09/2022 11:53:27	El archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\\SICOP_VENTAS_TEMP_DMS.txt no existe, desde: procesaArchivoGeneradoporBPro
+ 
+07/09/2022 12:05:01	Se seteo la fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '07/09/2022' where PMS_NUMSERIE ='1FMJU1K55DEF15796' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '1096', desde: RegistrarSalida
+07/09/2022 12:05:01	Intento : 1 de seteo de fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '07/09/2022' where PMS_NUMSERIE ='1FMJU1K55DEF15796' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '1096', desde: RegistrarSalida
+07/09/2022 12:05:02	La salida de la unidad con vin: 1FMJU1K55DEF15796 ha quedado registrada., desde: RegistraSalida
+07/09/2022 12:05:02	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt 1FMJU1K55DEF15796, desde: ProcesaBitacora
+07/09/2022 12:06:02	id_usuario: 16, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:06:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 206033001400566' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'BC000000983' where id_bitacora=97745 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:06:02	id_maquina: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:06:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\FORD_Tepepan\\SEMINUEVOS\SICOP_VENTAS_TEMP_DMS_1FMJU1K55DEF15796.TXT, desde: fsw_Created
+07/09/2022 12:06:02	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_1FMJU1K55DEF15796.TXT, desde: fsw_Created
+ 
+07/09/2022 12:06:22	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='MALB24BC4PM130672' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6343', desde: RegistrarSalida
+07/09/2022 12:06:22	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='MALB24BC4PM130672' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6343', desde: RegistrarSalida
+07/09/2022 12:06:23	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 13/08/2022  CCP_CONSCARTERA= 108860 vin: MALB24BC4PM130672, desde: RegistrarSalida
+07/09/2022 12:06:23	La salida de la unidad con vin: MALB24BC4PM130672 ha quedado registrada., desde: RegistraSalida
+07/09/2022 12:06:23	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\HYUNDAI_ECATEPEC\BusinessProSICOPHYUNDAI_ECATEPEC.exe" SICOP GMI GAHyundaiEcatepec Exporta E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\ parametro_ocioso.txt MALB24BC4PM130672, desde: ProcesaBitacora
+07/09/2022 12:07:23	id_usuario: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:07:23	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 204132000613579' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000006677' where id_bitacora=97746 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:07:23	id_maquina: 21, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:07:23	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\HYUNDAI_ECATEPEC\\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT, desde: fsw_Created
+07/09/2022 12:07:23	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT, desde: fsw_Created
+07/09/2022 12:07:23	id_maquina: 33, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:07:23	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT'., desde: fsw_Created
+ 
+07/09/2022 12:07:23	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: MALB24BC4PM130672 idsicop: 204132000613579 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT id_maquina: 33, desde: EnviaCorreo
+07/09/2022 12:07:26	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 12:08:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='MALB24BC4PM130672' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6343', desde: RegistrarSalida
+07/09/2022 12:08:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='MALB24BC4PM130672' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6343', desde: RegistrarSalida
+07/09/2022 12:08:01	La salida de la unidad con vin: MALB24BC4PM130672 ha quedado registrada., desde: RegistraSalida
+07/09/2022 12:08:01	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\HYUNDAI_ECATEPEC\BusinessProSICOPHYUNDAI_ECATEPEC.exe" SICOP GMI GAHyundaiEcatepec Exporta E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\ parametro_ocioso.txt MALB24BC4PM130672, desde: ProcesaBitacora
+07/09/2022 12:09:01	id_usuario: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:09:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 204132000613579' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000006677' where id_bitacora=97747 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:09:02	id_maquina: 21, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:09:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\HYUNDAI_ECATEPEC\\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT, desde: fsw_Created
+07/09/2022 12:09:02	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+07/09/2022 12:09:02	id_maquina: 33, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:09:02	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_MALB24BC4PM130672.TXT'., desde: fsw_Created
+ 
+07/09/2022 12:09:22	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='MALB24BC3PM127939' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6368', desde: RegistrarSalida
+07/09/2022 12:09:22	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='MALB24BC3PM127939' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6368', desde: RegistrarSalida
+07/09/2022 12:09:22	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 22/08/2022  CCP_CONSCARTERA= 112985 vin: MALB24BC3PM127939, desde: RegistrarSalida
+07/09/2022 12:09:23	La salida de la unidad con vin: MALB24BC3PM127939 ha quedado registrada., desde: RegistraSalida
+07/09/2022 12:09:23	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\HYUNDAI_ECATEPEC\BusinessProSICOPHYUNDAI_ECATEPEC.exe" SICOP GMI GAHyundaiEcatepec Exporta E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\ parametro_ocioso.txt MALB24BC3PM127939, desde: ProcesaBitacora
+07/09/2022 12:10:23	id_usuario: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:10:23	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 204132010200049' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000006702' where id_bitacora=97748 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:10:23	id_maquina: 21, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:10:23	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\HYUNDAI_ECATEPEC\\SICOP_VENTAS_TEMP_DMS_MALB24BC3PM127939.TXT, desde: fsw_Created
+07/09/2022 12:10:23	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_MALB24BC3PM127939.TXT, desde: fsw_Created
+07/09/2022 12:10:23	id_maquina: 33, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:10:23	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_MALB24BC3PM127939.TXT'., desde: fsw_Created
+ 
+07/09/2022 12:10:23	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: MALB24BC3PM127939 idsicop: 204132010200049 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_MALB24BC3PM127939.TXT id_maquina: 33, desde: EnviaCorreo
+07/09/2022 12:10:25	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 12:38:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSGHD52H4ND146364' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='49134', desde: RegistrarSalida
+07/09/2022 12:38:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LSGHD52H4ND146364' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='49134', desde: RegistrarSalida
+07/09/2022 12:38:02	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 26/08/2022  CCP_CONSCARTERA= 372723 vin: LSGHD52H4ND146364, desde: RegistrarSalida
+07/09/2022 12:38:02	La salida de la unidad con vin: LSGHD52H4ND146364 ha quedado registrada., desde: RegistraSalida
+07/09/2022 12:38:02	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\CHEVROLET\BusinessProSICOPCHEVROLETAZC.exe" SICOP GMI GAAA_Azcapo Exporta E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\ parametro_ocioso.txt LSGHD52H4ND146364, desde: ProcesaBitacora
+07/09/2022 12:39:02	id_usuario: 18, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:39:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 171054040600370' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000086899' where id_bitacora=97749 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:39:02	id_maquina: 11, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:39:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\Chevrolet_Azcapotzalco\SICOP_VENTAS_TEMP_DMS_LSGHD52H4ND146364.TXT, desde: fsw_Created
+07/09/2022 12:39:02	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\ChevroletAzcaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSGHD52H4ND146364.TXT, desde: fsw_Created
+07/09/2022 12:39:02	id_maquina: 36, desde: procesaArchivoGeneradoporBPro
+07/09/2022 12:39:02	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_LSGHD52H4ND146364.TXT'., desde: fsw_Created
+ 
+07/09/2022 12:39:02	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSGHD52H4ND146364 idsicop: 171054040600370 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSGHD52H4ND146364.TXT id_maquina: 36, desde: EnviaCorreo
+07/09/2022 12:39:05	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 13:49:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='ml3abw6j6ph001136' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='2263', desde: RegistrarSalida
+07/09/2022 13:49:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='ml3abw6j6ph001136' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='2263', desde: RegistrarSalida
+07/09/2022 13:49:02	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 23/08/2022  CCP_CONSCARTERA= 163065 vin: ml3abw6j6ph001136, desde: RegistrarSalida
+07/09/2022 13:49:02	La salida de la unidad con vin: ml3abw6j6ph001136 ha quedado registrada., desde: RegistraSalida
+07/09/2022 13:49:02	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR_TEPEPAN\BusinessProSICOPAUTOTEPEPAN.exe" SICOP GMI GAAutoAngarTepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarTepepanRecibidos\VentasBPro\ parametro_ocioso.txt ml3abw6j6ph001136, desde: ProcesaBitacora
+07/09/2022 13:50:02	id_usuario: 14, desde: procesaArchivoGeneradoporBPro
+07/09/2022 13:50:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 129580000305126' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AG000011542' where id_bitacora=97750 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 13:50:02	id_maquina: 31, desde: procesaArchivoGeneradoporBPro
+07/09/2022 13:50:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AutoAngarChryslerTepepan\\SICOP_VENTAS_TEMP_DMS_ML3ABW6J6PH001136.TXT, desde: fsw_Created
+07/09/2022 13:50:03	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_ML3ABW6J6PH001136.TXT, desde: fsw_Created
+ 
+07/09/2022 13:50:03	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: ML3ABW6J6PH001136 idsicop: 129580000305126 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_ML3ABW6J6PH001136.TXT id_maquina: 31, desde: EnviaCorreo
+07/09/2022 13:50:05	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:15:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3PCAJ5N34PF101720' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='30', desde: RegistrarSalida
+07/09/2022 16:15:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3PCAJ5N34PF101720' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='30', desde: RegistrarSalida
+07/09/2022 16:15:01	La salida de la unidad con vin: 3PCAJ5N34PF101720 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:15:01	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\INFINITIPOLANCO\BusinessProSICOPINFINITIPOL.exe" SICOP GMI GADVAP_Polanco Exporta E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\ parametro_ocioso.txt 3PCAJ5N34PF101720, desde: ProcesaBitacora
+07/09/2022 16:16:01	El archivo : E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 16:16:01	id_usuario: 19, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:16:01	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 163682010200057' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000000029' where id_bitacora=97711 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:16:01	id_maquina: 41, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:16:01	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\INFINITI_POLANCO\\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT, desde: fsw_Created
+07/09/2022 16:16:01	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\INFINITIPOLANCORecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT, desde: fsw_Created
+ 
+07/09/2022 16:16:01	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3PCAJ5N34PF101720 idsicop: 163682010200057 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3PCAJ5N34PF101720.TXT id_maquina: 41, desde: EnviaCorreo
+07/09/2022 16:16:03	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:16:21	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW74U99NZ210491' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1256', desde: RegistrarSalida
+07/09/2022 16:16:21	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='LSJW74U99NZ210491' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1256', desde: RegistrarSalida
+07/09/2022 16:16:22	La salida de la unidad con vin: LSJW74U99NZ210491 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:16:22	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt LSJW74U99NZ210491, desde: ProcesaBitacora
+07/09/2022 16:17:22	El archivo : E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT ya existia se borra antes de agregarle el vin al generado por BPro, desde: fsw_Created
+07/09/2022 16:17:22	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:17:22	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 690001000506746' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001327' where id_bitacora=97727 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:17:22	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:17:22	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT, desde: fsw_Created
+07/09/2022 16:17:22	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT, desde: fsw_Created
+ 
+07/09/2022 16:17:22	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJW74U99NZ210491 idsicop: 690001000506746 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJW74U99NZ210491.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 16:17:24	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:17:42	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:17:42	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:17:43	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 08/09/2022  CCP_CONSCARTERA= 15067 vin: 3C6SRADGXNG217836, desde: RegistrarSalida
+07/09/2022 16:17:43	La salida de la unidad con vin: 3C6SRADGXNG217836 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:17:43	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADGXNG217836, desde: ProcesaBitacora
+07/09/2022 16:18:43	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:18:43	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021196' where id_bitacora=97716 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:18:43	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:18:43	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+07/09/2022 16:18:43	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+ 
+07/09/2022 16:18:43	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADGXNG217836 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:18:45	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:19:04	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='1FTFW1RG3NFA21797' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='5768', desde: RegistrarSalida
+07/09/2022 16:19:04	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='1FTFW1RG3NFA21797' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='5768', desde: RegistrarSalida
+07/09/2022 16:19:04	La salida de la unidad con vin: 1FTFW1RG3NFA21797 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:19:04	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_ZARAGOZA\BusinessProSICOPFORDZARA.exe" SICOP GMI GAAAF_Zaragoza Exporta E:\LB\PROGRAMAS\RegistraSalida\FordZaragozaRecibidos\VentasBPro\ parametro_ocioso.txt 1FTFW1RG3NFA21797, desde: ProcesaBitacora
+07/09/2022 16:20:04	id_usuario: 25, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:20:04	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 010337000414241' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000004117' where id_bitacora=97751 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:20:04	id_maquina: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:20:04	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\FORD_ZARAGOZA\\SICOP_VENTAS_TEMP_DMS_1FTFW1RG3NFA21797.TXT, desde: fsw_Created
+07/09/2022 16:20:04	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\FordZaragozaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_1FTFW1RG3NFA21797.TXT, desde: fsw_Created
+ 
+07/09/2022 16:20:04	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 1FTFW1RG3NFA21797 idsicop: 010337000414241 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_1FTFW1RG3NFA21797.TXT id_maquina: 12, desde: EnviaCorreo
+07/09/2022 16:20:06	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:20:24	Se seteo la fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '07/09/2022' where PMS_NUMSERIE ='1FBAX2CM6HKA13141' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '2341', desde: RegistrarSalida
+07/09/2022 16:20:24	Intento : 1 de seteo de fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '07/09/2022' where PMS_NUMSERIE ='1FBAX2CM6HKA13141' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '2341', desde: RegistrarSalida
+07/09/2022 16:20:25	La salida de la unidad con vin: 1FBAX2CM6HKA13141 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:20:25	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_ZARAGOZA\BusinessProSICOPFORDZARA.exe" SICOP GMI GAAAF_Zaragoza Exporta E:\LB\PROGRAMAS\RegistraSalida\FordZaragozaRecibidos\VentasBPro\ parametro_ocioso.txt 1FBAX2CM6HKA13141, desde: ProcesaBitacora
+07/09/2022 16:21:25	id_usuario: 25, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:21:25	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 682001001001204' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'BB000001583' where id_bitacora=97752 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:21:25	id_maquina: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:21:25	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\FORD_ZARAGOZA\\SEMINUEVOS\SICOP_VENTAS_TEMP_DMS_1FBAX2CM6HKA13141.TXT, desde: fsw_Created
+07/09/2022 16:21:25	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\FordZaragozaRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_1FBAX2CM6HKA13141.TXT, desde: fsw_Created
+ 
+07/09/2022 16:21:25	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 1FBAX2CM6HKA13141 idsicop: 682001001001204 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_1FBAX2CM6HKA13141.TXT id_maquina: 12, desde: EnviaCorreo
+07/09/2022 16:21:27	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:21:45	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LZWNNNGM5PC809836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='4014', desde: RegistrarSalida
+07/09/2022 16:21:45	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LZWNNNGM5PC809836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='4014', desde: RegistrarSalida
+07/09/2022 16:21:46	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 13/08/2022  CCP_CONSCARTERA= 355603 vin: LZWNNNGM5PC809836, desde: RegistrarSalida
+07/09/2022 16:21:46	La salida de la unidad con vin: LZWNNNGM5PC809836 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:21:46	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\Chevrolet_Tepepan\BusinessProSICOPCHEVROLETTEPEPAN.exe" SICOP GMI GAAA_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\ChevroletTepepanRecibidos\VentasBPro\ parametro_ocioso.txt LZWNNNGM5PC809836, desde: ProcesaBitacora
+07/09/2022 16:22:46	id_usuario: 15, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:22:46	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 171118000307376' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AC000004431' where id_bitacora=97753 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:22:47	id_maquina: 30, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:22:47	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\Chevrolet_Tepepan\SICOP_VENTAS_TEMP_DMS_LZWNNNGM5PC809836.TXT, desde: fsw_Created
+07/09/2022 16:22:47	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\ChevroletTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LZWNNNGM5PC809836.TXT, desde: fsw_Created
+ 
+07/09/2022 16:22:47	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LZWNNNGM5PC809836 idsicop: 171118000307376 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LZWNNNGM5PC809836.TXT id_maquina: 30, desde: EnviaCorreo
+07/09/2022 16:22:50	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:23:07	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LZWNNNGM5PC809836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='4014', desde: RegistrarSalida
+07/09/2022 16:23:07	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LZWNNNGM5PC809836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='4014', desde: RegistrarSalida
+07/09/2022 16:23:08	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 08/09/2022  CCP_CONSCARTERA= 355603 vin: LZWNNNGM5PC809836, desde: RegistrarSalida
+07/09/2022 16:23:08	La salida de la unidad con vin: LZWNNNGM5PC809836 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:23:08	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\Chevrolet_Tepepan\BusinessProSICOPCHEVROLETTEPEPAN.exe" SICOP GMI GAAA_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\ChevroletTepepanRecibidos\VentasBPro\ parametro_ocioso.txt LZWNNNGM5PC809836, desde: ProcesaBitacora
+07/09/2022 16:24:08	id_usuario: 15, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:24:08	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 171118000307376' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AC000004431' where id_bitacora=97754 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:24:08	id_maquina: 30, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:24:08	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\Chevrolet_Tepepan\SICOP_VENTAS_TEMP_DMS_LZWNNNGM5PC809836.TXT, desde: fsw_Created
+07/09/2022 16:24:08	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LZWNNNGM5PC809836.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+ 
+07/09/2022 16:24:28	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LZWMLMGM9PG012204' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='4061', desde: RegistrarSalida
+07/09/2022 16:24:28	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='LZWMLMGM9PG012204' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='4061', desde: RegistrarSalida
+07/09/2022 16:24:29	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 26/08/2022  CCP_CONSCARTERA= 372249 vin: LZWMLMGM9PG012204, desde: RegistrarSalida
+07/09/2022 16:24:29	La salida de la unidad con vin: LZWMLMGM9PG012204 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:24:29	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\Chevrolet_Tepepan\BusinessProSICOPCHEVROLETTEPEPAN.exe" SICOP GMI GAAA_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\ChevroletTepepanRecibidos\VentasBPro\ parametro_ocioso.txt LZWMLMGM9PG012204, desde: ProcesaBitacora
+07/09/2022 16:25:29	id_usuario: 15, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:25:29	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 390001004619950' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AC000004474' where id_bitacora=97755 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:25:29	id_maquina: 30, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:25:29	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\Chevrolet_Tepepan\SICOP_VENTAS_TEMP_DMS_LZWMLMGM9PG012204.TXT, desde: fsw_Created
+07/09/2022 16:25:29	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\ChevroletTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LZWMLMGM9PG012204.TXT, desde: fsw_Created
+ 
+07/09/2022 16:25:30	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LZWMLMGM9PG012204 idsicop: 390001004619950 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LZWMLMGM9PG012204.TXT id_maquina: 30, desde: EnviaCorreo
+07/09/2022 16:25:32	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:25:50	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='1fdrf3g63ned36538' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3379', desde: RegistrarSalida
+07/09/2022 16:25:50	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='1fdrf3g63ned36538' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3379', desde: RegistrarSalida
+07/09/2022 16:25:50	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 26/05/2022  CCP_CONSCARTERA= 132328 vin: 1fdrf3g63ned36538, desde: RegistrarSalida
+07/09/2022 16:25:50	La salida de la unidad con vin: 1fdrf3g63ned36538 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:25:50	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt 1fdrf3g63ned36538, desde: ProcesaBitacora
+07/09/2022 16:26:50	id_usuario: 16, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:26:50	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 010033000407825' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AC000003096' where id_bitacora=97756 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:26:50	id_maquina: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:26:50	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\FORD_Tepepan\\SICOP_VENTAS_TEMP_DMS_1FDRF3G63NED36538.TXT, desde: fsw_Created
+07/09/2022 16:26:50	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_1FDRF3G63NED36538.TXT, desde: fsw_Created
+ 
+07/09/2022 16:26:51	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 1FDRF3G63NED36538 idsicop: 010033000407825 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_1FDRF3G63NED36538.TXT id_maquina: 24, desde: EnviaCorreo
+07/09/2022 16:26:52	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:27:11	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='1fdrf3g63ned36538' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3379', desde: RegistrarSalida
+07/09/2022 16:27:11	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='1fdrf3g63ned36538' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='3379', desde: RegistrarSalida
+07/09/2022 16:27:11	La salida de la unidad con vin: 1fdrf3g63ned36538 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:27:11	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt 1fdrf3g63ned36538, desde: ProcesaBitacora
+07/09/2022 16:28:11	id_usuario: 16, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:28:11	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 010033000407825' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AC000003096' where id_bitacora=97757 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:28:11	id_maquina: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:28:11	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\FORD_Tepepan\\SICOP_VENTAS_TEMP_DMS_1FDRF3G63NED36538.TXT, desde: fsw_Created
+07/09/2022 16:28:11	Error: El proceso no puede obtener acceso al archivo 'E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_1FDRF3G63NED36538.TXT' porque está siendo utilizado en otro proceso., desde: fsw_Created
+ 
+07/09/2022 16:31:02	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='TMCJB3UE2PJ223629' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6386', desde: RegistrarSalida
+07/09/2022 16:31:02	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='TMCJB3UE2PJ223629' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='6386', desde: RegistrarSalida
+07/09/2022 16:31:02	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 30/07/2022  CCP_CONSCARTERA= 102792 vin: TMCJB3UE2PJ223629, desde: RegistrarSalida
+07/09/2022 16:31:02	La salida de la unidad con vin: TMCJB3UE2PJ223629 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:31:02	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\HYUNDAI_ECATEPEC\BusinessProSICOPHYUNDAI_ECATEPEC.exe" SICOP GMI GAHyundaiEcatepec Exporta E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\ parametro_ocioso.txt TMCJB3UE2PJ223629, desde: ProcesaBitacora
+07/09/2022 16:32:02	id_usuario: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:32:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 204132000613823' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AB000006717' where id_bitacora=97758 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:32:02	id_maquina: 21, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:32:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\HYUNDAI_ECATEPEC\\SICOP_VENTAS_TEMP_DMS_TMCJB3UE2PJ223629.TXT, desde: fsw_Created
+07/09/2022 16:32:02	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\HyundaiEcatepecRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_TMCJB3UE2PJ223629.TXT, desde: fsw_Created
+07/09/2022 16:32:02	id_maquina: 33, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:32:02	Error: No se pudo encontrar el archivo 'E:\lb\PROGRAMAS\RegistraSalida\SICOP_VENTAS_TEMP_DMS_TMCJB3UE2PJ223629.TXT'., desde: fsw_Created
+ 
+07/09/2022 16:32:02	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: TMCJB3UE2PJ223629 idsicop: 204132000613823 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_TMCJB3UE2PJ223629.TXT id_maquina: 33, desde: EnviaCorreo
+07/09/2022 16:32:04	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:44:00	Hay elementos ha reprocesar : 13, desde: timerReproceso_Tick
+07/09/2022 16:44:00	Reprocesando id_bitacora: 97717, desde: timerReproceso_Tick
+07/09/2022 16:44:00	Reprocesando id_bitacora: 97718, desde: timerReproceso_Tick
+07/09/2022 16:44:00	Reprocesando id_bitacora: 97719, desde: timerReproceso_Tick
+07/09/2022 16:44:00	Reprocesando id_bitacora: 97720, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97745, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97708, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97721, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97722, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97723, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97724, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97726, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97729, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Reprocesando id_bitacora: 97725, desde: timerReproceso_Tick
+07/09/2022 16:44:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:44:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG217836' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:44:01	La salida de la unidad con vin: 3C6SRADGXNG217836 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:44:01	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADGXNG217836, desde: ProcesaBitacora
+07/09/2022 16:45:01	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:45:02	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021196' where id_bitacora=97708 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:45:02	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:45:02	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+07/09/2022 16:45:02	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT, desde: fsw_Created
+ 
+07/09/2022 16:45:02	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADGXNG217836 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG217836.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:45:04	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:45:22	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG217847' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:45:22	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG217847' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:45:22	La salida de la unidad con vin: 3C6SRADG4NG217847 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:45:22	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG4NG217847, desde: ProcesaBitacora
+07/09/2022 16:46:22	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:46:22	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021197' where id_bitacora=97717 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:46:22	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:46:22	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG217847.TXT, desde: fsw_Created
+07/09/2022 16:46:22	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG217847.TXT, desde: fsw_Created
+ 
+07/09/2022 16:46:22	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG4NG217847 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG217847.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:46:24	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:46:42	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG1NG217871' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:46:42	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG1NG217871' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:46:42	La salida de la unidad con vin: 3C6SRADG1NG217871 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:46:42	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG1NG217871, desde: ProcesaBitacora
+07/09/2022 16:47:42	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:47:42	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021198' where id_bitacora=97718 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:47:42	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:47:42	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG1NG217871.TXT, desde: fsw_Created
+07/09/2022 16:47:42	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG1NG217871.TXT, desde: fsw_Created
+ 
+07/09/2022 16:47:42	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG1NG217871 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG1NG217871.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:47:44	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:48:03	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217835' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:48:03	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217835' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:48:03	La salida de la unidad con vin: 3C6SRADG8NG217835 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:48:03	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG8NG217835, desde: ProcesaBitacora
+07/09/2022 16:49:03	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:49:03	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021199' where id_bitacora=97719 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:49:03	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:49:03	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217835.TXT, desde: fsw_Created
+07/09/2022 16:49:03	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217835.TXT, desde: fsw_Created
+ 
+07/09/2022 16:49:03	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG8NG217835 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217835.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:49:05	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:49:23	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217866' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:49:23	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217866' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:49:23	La salida de la unidad con vin: 3C6SRADG8NG217866 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:49:23	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG8NG217866, desde: ProcesaBitacora
+07/09/2022 16:50:23	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:50:23	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021200' where id_bitacora=97720 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:50:23	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:50:23	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217866.TXT, desde: fsw_Created
+07/09/2022 16:50:23	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217866.TXT, desde: fsw_Created
+ 
+07/09/2022 16:50:23	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG8NG217866 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217866.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:50:26	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:50:44	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG9NG240007' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:50:44	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG9NG240007' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:50:44	La salida de la unidad con vin: 3C6SRADG9NG240007 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:50:44	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG9NG240007, desde: ProcesaBitacora
+07/09/2022 16:51:44	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:51:44	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021201' where id_bitacora=97721 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:51:44	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:51:44	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG9NG240007.TXT, desde: fsw_Created
+07/09/2022 16:51:44	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG9NG240007.TXT, desde: fsw_Created
+ 
+07/09/2022 16:51:44	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG9NG240007 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG9NG240007.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:51:46	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:52:04	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG240004' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:52:04	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG240004' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:52:04	La salida de la unidad con vin: 3C6SRADG3NG240004 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:52:04	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG3NG240004, desde: ProcesaBitacora
+07/09/2022 16:53:04	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:53:04	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021202' where id_bitacora=97722 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:53:04	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:53:04	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG240004.TXT, desde: fsw_Created
+07/09/2022 16:53:04	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG240004.TXT, desde: fsw_Created
+ 
+07/09/2022 16:53:04	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG3NG240004 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG240004.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:53:06	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:53:24	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG239993' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:53:24	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG4NG239993' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:53:25	La salida de la unidad con vin: 3C6SRADG4NG239993 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:53:25	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG4NG239993, desde: ProcesaBitacora
+07/09/2022 16:54:25	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:54:25	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021203' where id_bitacora=97723 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:54:25	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:54:25	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG239993.TXT, desde: fsw_Created
+07/09/2022 16:54:25	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG239993.TXT, desde: fsw_Created
+ 
+07/09/2022 16:54:25	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG4NG239993 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG4NG239993.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:54:27	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:54:45	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG239998' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:54:45	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG3NG239998' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:54:45	La salida de la unidad con vin: 3C6SRADG3NG239998 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:54:45	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG3NG239998, desde: ProcesaBitacora
+07/09/2022 16:55:45	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:55:45	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021204' where id_bitacora=97724 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:55:45	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:55:45	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG239998.TXT, desde: fsw_Created
+07/09/2022 16:55:45	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG239998.TXT, desde: fsw_Created
+ 
+07/09/2022 16:55:45	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG3NG239998 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG3NG239998.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:55:47	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:56:05	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217852' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:56:05	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG8NG217852' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:56:05	La salida de la unidad con vin: 3C6SRADG8NG217852 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:56:05	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG8NG217852, desde: ProcesaBitacora
+07/09/2022 16:57:06	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:57:06	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021205' where id_bitacora=97725 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:57:06	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:57:06	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217852.TXT, desde: fsw_Created
+07/09/2022 16:57:06	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217852.TXT, desde: fsw_Created
+ 
+07/09/2022 16:57:06	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG8NG217852 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG8NG217852.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:57:08	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:57:26	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG5NG240005' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:57:26	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADG5NG240005' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:57:26	La salida de la unidad con vin: 3C6SRADG5NG240005 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:57:26	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADG5NG240005, desde: ProcesaBitacora
+07/09/2022 16:58:26	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:58:26	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021206' where id_bitacora=97726 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:58:26	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:58:26	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADG5NG240005.TXT, desde: fsw_Created
+07/09/2022 16:58:26	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADG5NG240005.TXT, desde: fsw_Created
+ 
+07/09/2022 16:58:26	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADG5NG240005 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADG5NG240005.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:58:28	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 16:58:46	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG259486' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:58:46	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '06/09/2022' where pen_numserie ='3C6SRADGXNG259486' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='14305', desde: RegistrarSalida
+07/09/2022 16:58:46	La salida de la unidad con vin: 3C6SRADGXNG259486 ha quedado registrada., desde: RegistraSalida
+07/09/2022 16:58:46	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\AUTOANGAR\BusinessProSICOPAUTO.exe" SICOP GMI GAAutoAngar Exporta E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\ parametro_ocioso.txt 3C6SRADGXNG259486, desde: ProcesaBitacora
+07/09/2022 16:59:46	id_usuario: 17, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:59:46	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000021207' where id_bitacora=97729 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:59:46	id_maquina: 5, desde: procesaArchivoGeneradoporBPro
+07/09/2022 16:59:46	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\AUTOANGAR\\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG259486.TXT, desde: fsw_Created
+07/09/2022 16:59:46	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\AutoAngarRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG259486.TXT, desde: fsw_Created
+ 
+07/09/2022 16:59:47	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: 3C6SRADGXNG259486 idsicop: FIDEICOMISO DE PROMOCION TURISTICA DEL ESTADO DE NAYARIT archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_3C6SRADGXNG259486.TXT id_maquina: 5, desde: EnviaCorreo
+07/09/2022 16:59:49	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
+07/09/2022 17:00:07	Se seteo la fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '07/09/2022' where PMS_NUMSERIE ='1FMJU1K55DEF15796' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '1096', desde: RegistrarSalida
+07/09/2022 17:00:07	Intento : 1 de seteo de fecha real de entrega: update USN_PEDIDO set PMS_FECHAREALENTREGA = '07/09/2022' where PMS_NUMSERIE ='1FMJU1K55DEF15796' and Isnull(PMS_FECHAREALENTREGA,'01/01/1900')='01/01/1900' and PMS_NUMPEDIDO = '1096', desde: RegistrarSalida
+07/09/2022 17:00:07	La salida de la unidad con vin: 1FMJU1K55DEF15796 ha quedado registrada., desde: RegistraSalida
+07/09/2022 17:00:07	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\FORD_TEPEPAN\BusinessProSICOPFORDTEPEPAN.exe" SICOP GMI GAAAF_Tepepan Exporta E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\ parametro_ocioso.txt 1FMJU1K55DEF15796, desde: ProcesaBitacora
+07/09/2022 17:01:08	id_usuario: 16, desde: procesaArchivoGeneradoporBPro
+07/09/2022 17:01:08	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 206033001400566' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'BC000000983' where id_bitacora=97745 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 17:01:08	id_maquina: 24, desde: procesaArchivoGeneradoporBPro
+07/09/2022 17:01:08	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\FORD_Tepepan\\SEMINUEVOS\SICOP_VENTAS_TEMP_DMS_1FMJU1K55DEF15796.TXT, desde: fsw_Created
+07/09/2022 17:01:08	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\FordTepepanRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_1FMJU1K55DEF15796.TXT, desde: fsw_Created
+ 
+07/09/2022 17:13:01	Se seteo la fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='lsja36u69nn122748' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1270', desde: RegistrarSalida
+07/09/2022 17:13:01	Intento : 1 de seteo de fecha real de entrega: update UNI_PEDIUNI set PEN_FECHAENTREGA_REAL = '07/09/2022' where pen_numserie ='lsja36u69nn122748' and Isnull(PEN_FECHAENTREGA_REAL,'01/01/1900')='01/01/1900' and pen_idpedi ='1270', desde: RegistrarSalida
+07/09/2022 17:13:01	Se actualizó la FechaPromesaDePago: 08/09/2022 Tenia esta fecha: 18/08/2022  CCP_CONSCARTERA= 61155 vin: lsja36u69nn122748, desde: RegistrarSalida
+07/09/2022 17:13:01	La salida de la unidad con vin: lsja36u69nn122748 ha quedado registrada., desde: RegistraSalida
+07/09/2022 17:13:01	Se ejecutó: "E:\LB\PROGRAMAS\EjecutableBP\MGAeropuerto\BusinessProSICOPMGAeropuerto.exe" SICOP GMI GAMG_VEMAER Exporta E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\ parametro_ocioso.txt lsja36u69nn122748, desde: ProcesaBitacora
+07/09/2022 17:14:01	id_usuario: 12, desde: procesaArchivoGeneradoporBPro
+07/09/2022 17:14:01	Update SICOP_BITACORA set que = 'Actualizacion exitosa! Id Prospecto: 690001000507525' ,fh_creacion_av = getdate(), fh_envio_bp = getdate(), factura = 'AA000001377' where id_bitacora=97759 and centralizado = 'True', desde: procesaArchivoGeneradoporBPro
+07/09/2022 17:14:01	id_maquina: 38, desde: procesaArchivoGeneradoporBPro
+07/09/2022 17:14:01	Se Envió el archivo a la carpeta de SICOP : E:\LB\Sicop\MGAeropuerto\\SICOP_VENTAS_TEMP_DMS_LSJA36U69NN122748.TXT, desde: fsw_Created
+07/09/2022 17:14:01	Se borra el archivo: E:\LB\PROGRAMAS\RegistraSalida\MGAeropuertoRecibidos\VentasBPro\SICOP_VENTAS_TEMP_DMS_LSJA36U69NN122748.TXT, desde: fsw_Created
+ 
+07/09/2022 17:14:01	Intento de envio de correo desde: procesaArchivoGeneradoporBPro vin: LSJA36U69NN122748 idsicop: 690001000507525 archivo: E:\lb\PROGRAMAS\RegistraSalida\Procesados\SICOP_VENTAS_TEMP_DMS_LSJA36U69NN122748.TXT id_maquina: 38, desde: EnviaCorreo
+07/09/2022 17:14:04	Se interrumpió el estado de espera del subproceso., desde: SensaResultadoCargaEnSicop ex2
