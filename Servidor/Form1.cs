@@ -77,7 +77,7 @@ namespace RegistraSalida
          * 20200628 Se separa la cadena de distribucion de unidades seminuevas.
          * 20200724 solo debe actualizar la fecha de salida sobre el registro del pedido de la unidad que está activo.
          * 20221025 Bpro en ocasiones genera archivos de facturacion sin FECHA de ENTREGA, se coloca la fecha de entrega a este archivo. Se evita que envíe correo de confirmacion sin fecha de entrega.
-         * 
+         * 20231012 No enviaba el correo electronico cuando sucedia un error en el registro de SEEKOP porque estaba buscando por el codigo duro del valor 20, SEEKOP nos hizo favor de registrar otros valores para sus errores.
          */
 
         // "C:\AndradeGPO\ActualizarCampoEnBP\Ejecutable\BusinessProSICOP.exe" SICOP GMI GAZM_Zaragoza Exporta C:\AndradeGPO\ActualizarCampoEnBP\SiCoP\Generar\ parametro_ocioso.txt 3N1CK3CD9DL259265 1000 5063
@@ -1675,12 +1675,15 @@ namespace RegistraSalida
                         {
                             string codigo_sicop = reg["Codigo"].ToString().Trim();
                             string mensaje_sicop = reg["Mensaje"].ToString().Trim();
-                            string resultado_busqueda = codigo_sicop == "20" ? "Encontrado con error" : "Encontrado ok: " + facturaenarchivo;
+                            //20231012
+                            //string resultado_busqueda = codigo_sicop == "20" ? "Encontrado con error" : "Encontrado ok: " + facturaenarchivo;
+                            string resultado_busqueda = codigo_sicop != "0" ? "Encontrado con error" : "Encontrado ok: " + facturaenarchivo;
 
-                            //Codigo = 20 es un error de registro en SICOP enviamos el correo de Confirmacion con Código de Error.                      
-                            if (codigo_sicop == "20")
+                            //20231012
+                            //Codigo != 0 es un error de registro en SICOP enviamos el correo de Confirmacion con Código de Error.                      
+                            if (codigo_sicop != "0")
                             {
-                                EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, RutaArchivoGenerado, proceso, id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), "20: " + mensaje_sicop.Trim(), id_bitacora.ToString());
+                                EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, RutaArchivoGenerado, proceso, id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(),  codigo_sicop.Trim() + ": " + mensaje_sicop.Trim(), id_bitacora.ToString());
                             }
                             else
                             {
