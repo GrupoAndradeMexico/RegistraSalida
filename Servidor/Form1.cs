@@ -1190,17 +1190,24 @@ namespace RegistraSalida
                                 ArchivoRenombrado = Archivo.Name.Trim();
                                 string nuevaruta = CarpetaRemota + "\\" + ArchivoRenombrado.Trim();
                                 string rutareal = ""; //ConsultaCarpetaDestino(idprospenarchivo.Trim()); //20200514
+                                bool isIntercambio = false;
+                                bool isFlotilla = false;
                                 if (tipoventa.IndexOf("INTERCAMBIOS")>-1) 
                                 {
+                                    isIntercambio = true;
                                     rutareal = Application.StartupPath + "\\Procesados\\INTERCAMBIOS"; //+ tipoventa.Trim();
                                 }
                                 if (tipoventa.IndexOf("FLOTILLA") > -1)
                                 {
+                                    isFlotilla = true;
                                     rutareal = Application.StartupPath + "\\Procesados\\FLOTILLAS"; //+ tipoventa.Trim();
                                 }
 
                                 //20200514
-                                rutareal = tipo_auto.Trim() == "Seminuevo" ? CarpetaRemota + "\\SEMINUEVOS" : "";     
+                                if (!isIntercambio && !isFlotilla)
+                                {
+                                    rutareal = tipo_auto.Trim() == "Seminuevo" ? CarpetaRemota + "\\SEMINUEVOS" : "";
+                                }
 
                                 nuevaruta = rutareal.Trim() == "" ? nuevaruta.Trim() : rutareal.Trim() + "\\" + ArchivoRenombrado.Trim();
 
@@ -1240,28 +1247,40 @@ namespace RegistraSalida
                                         Archivo.Delete();
                                     }
 
-                                if (idprospenarchivo.Trim()!="")
+                                if (!isIntercambio && !isFlotilla)
+                                {
+                                    if (idprospenarchivo.Trim() != "")
                                     {
-                                    if (!this.dicHilos.ContainsKey(vinenarchivo.Trim()))
-                                    { //No existe un hilo para esta orden de compra
-                                        //hilogenerico = new Thread(new ThreadStart(SensaCambioEstatus));
-                                        Thread hilogenericolocal = new Thread(() => SensaResultadoCargaEnSicop(id_bitacora,factura,vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim()));
-                                        //hilogenerico.Name = Folio_Operacion.Trim();
-                                        hilogenericolocal.IsBackground = true;
-                                        hilogenericolocal.Start();
-                                        this.dicHilos.Add(vinenarchivo.Trim(), hilogenericolocal);
+                                        if (!this.dicHilos.ContainsKey(vinenarchivo.Trim()))
+                                        { //No existe un hilo para esta orden de compra
+                                          //hilogenerico = new Thread(new ThreadStart(SensaCambioEstatus));
+                                            Thread hilogenericolocal = new Thread(() => SensaResultadoCargaEnSicop(id_bitacora, factura, vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim()));
+                                            //hilogenerico.Name = Folio_Operacion.Trim();
+                                            hilogenericolocal.IsBackground = true;
+                                            hilogenericolocal.Start();
+                                            this.dicHilos.Add(vinenarchivo.Trim(), hilogenericolocal);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        //20160909 Se desea que siempre envie correo, aunque no se haya registrado el archivo ventas en SICOP, La mayoria de las ocasiones es porque, no traerá id_prospecto
+                                        Q = "Update SICOP_BITACORA set ";
+                                        Q += " mensaje_sicop='Archivo sin ID PROSPECTO'";
+                                        Q += " where id_bitacora={0}";
+                                        Q = string.Format(Q, id_bitacora.Trim());
+                                        this.objDB.EjecUnaInstruccion(Q);
+                                        EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), "", id_bitacora.ToString());
                                     }
                                 }
                                 else
                                 {
-                                    //20160909 Se desea que siempre envie correo, aunque no se haya registrado el archivo ventas en SICOP, La mayoria de las ocasiones es porque, no traerá id_prospecto
                                     Q = "Update SICOP_BITACORA set ";
-                                    Q += " mensaje_sicop='Archivo sin ID PROSPECTO'";
+                                    Q += " mensaje_sicop = 'Es un intercambio o flotilla', fh_busqueda_sicop = getdate()";
                                     Q += " where id_bitacora={0}";
                                     Q = string.Format(Q, id_bitacora.Trim());
                                     this.objDB.EjecUnaInstruccion(Q);
-                                    EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), "", id_bitacora.ToString());
-                                }                                
+                                }
+
                             }
                             catch (Exception exe)
                             {
