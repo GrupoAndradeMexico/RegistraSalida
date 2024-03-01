@@ -77,7 +77,7 @@ namespace RegistraSalida
          * 20200628 Se separa la cadena de distribucion de unidades seminuevas.
          * 20200724 solo debe actualizar la fecha de salida sobre el registro del pedido de la unidad que está activo.
          * 20221025 Bpro en ocasiones genera archivos de facturacion sin FECHA de ENTREGA, se coloca la fecha de entrega a este archivo. Se evita que envíe correo de confirmacion sin fecha de entrega.
-         * 
+         * 20231012 No enviaba el correo electronico cuando sucedia un error en el registro de SEEKOP porque estaba buscando por el codigo duro del valor 20, SEEKOP nos hizo favor de registrar otros valores para sus errores.
          */
 
         // "C:\AndradeGPO\ActualizarCampoEnBP\Ejecutable\BusinessProSICOP.exe" SICOP GMI GAZM_Zaragoza Exporta C:\AndradeGPO\ActualizarCampoEnBP\SiCoP\Generar\ parametro_ocioso.txt 3N1CK3CD9DL259265 1000 5063
@@ -1190,17 +1190,24 @@ namespace RegistraSalida
                                 ArchivoRenombrado = Archivo.Name.Trim();
                                 string nuevaruta = CarpetaRemota + "\\" + ArchivoRenombrado.Trim();
                                 string rutareal = ""; //ConsultaCarpetaDestino(idprospenarchivo.Trim()); //20200514
+                                bool isIntercambio = false;
+                                bool isFlotilla = false;
                                 if (tipoventa.IndexOf("INTERCAMBIOS")>-1) 
                                 {
+                                    isIntercambio = true;
                                     rutareal = Application.StartupPath + "\\Procesados\\INTERCAMBIOS"; //+ tipoventa.Trim();
                                 }
                                 if (tipoventa.IndexOf("FLOTILLA") > -1)
                                 {
+                                    isFlotilla = true;
                                     rutareal = Application.StartupPath + "\\Procesados\\FLOTILLAS"; //+ tipoventa.Trim();
                                 }
 
                                 //20200514
-                                rutareal = tipo_auto.Trim() == "Seminuevo" ? CarpetaRemota + "\\SEMINUEVOS" : "";     
+                                if (!isIntercambio && !isFlotilla)
+                                {
+                                    rutareal = tipo_auto.Trim() == "Seminuevo" ? CarpetaRemota + "\\SEMINUEVOS" : "";
+                                }
 
                                 nuevaruta = rutareal.Trim() == "" ? nuevaruta.Trim() : rutareal.Trim() + "\\" + ArchivoRenombrado.Trim();
 
@@ -1240,28 +1247,40 @@ namespace RegistraSalida
                                         Archivo.Delete();
                                     }
 
-                                if (idprospenarchivo.Trim()!="")
+                                if (!isIntercambio && !isFlotilla)
+                                {
+                                    if (idprospenarchivo.Trim() != "")
                                     {
-                                    if (!this.dicHilos.ContainsKey(vinenarchivo.Trim()))
-                                    { //No existe un hilo para esta orden de compra
-                                        //hilogenerico = new Thread(new ThreadStart(SensaCambioEstatus));
-                                        Thread hilogenericolocal = new Thread(() => SensaResultadoCargaEnSicop(id_bitacora,factura,vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim()));
-                                        //hilogenerico.Name = Folio_Operacion.Trim();
-                                        hilogenericolocal.IsBackground = true;
-                                        hilogenericolocal.Start();
-                                        this.dicHilos.Add(vinenarchivo.Trim(), hilogenericolocal);
+                                        if (!this.dicHilos.ContainsKey(vinenarchivo.Trim()))
+                                        { //No existe un hilo para esta orden de compra
+                                          //hilogenerico = new Thread(new ThreadStart(SensaCambioEstatus));
+                                            Thread hilogenericolocal = new Thread(() => SensaResultadoCargaEnSicop(id_bitacora, factura, vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim()));
+                                            //hilogenerico.Name = Folio_Operacion.Trim();
+                                            hilogenericolocal.IsBackground = true;
+                                            hilogenericolocal.Start();
+                                            this.dicHilos.Add(vinenarchivo.Trim(), hilogenericolocal);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        //20160909 Se desea que siempre envie correo, aunque no se haya registrado el archivo ventas en SICOP, La mayoria de las ocasiones es porque, no traerá id_prospecto
+                                        Q = "Update SICOP_BITACORA set ";
+                                        Q += " mensaje_sicop='Archivo sin ID PROSPECTO'";
+                                        Q += " where id_bitacora={0}";
+                                        Q = string.Format(Q, id_bitacora.Trim());
+                                        this.objDB.EjecUnaInstruccion(Q);
+                                        EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), "", id_bitacora.ToString());
                                     }
                                 }
                                 else
                                 {
-                                    //20160909 Se desea que siempre envie correo, aunque no se haya registrado el archivo ventas en SICOP, La mayoria de las ocasiones es porque, no traerá id_prospecto
                                     Q = "Update SICOP_BITACORA set ";
-                                    Q += " mensaje_sicop='Archivo sin ID PROSPECTO'";
+                                    Q += " mensaje_sicop = 'Es un intercambio o flotilla', fh_busqueda_sicop = getdate()";
                                     Q += " where id_bitacora={0}";
                                     Q = string.Format(Q, id_bitacora.Trim());
                                     this.objDB.EjecUnaInstruccion(Q);
-                                    EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), "", id_bitacora.ToString());
-                                }                                
+                                }
+
                             }
                             catch (Exception exe)
                             {
@@ -1675,12 +1694,15 @@ namespace RegistraSalida
                         {
                             string codigo_sicop = reg["Codigo"].ToString().Trim();
                             string mensaje_sicop = reg["Mensaje"].ToString().Trim();
-                            string resultado_busqueda = codigo_sicop == "20" ? "Encontrado con error" : "Encontrado ok: " + facturaenarchivo;
+                            //20231012
+                            //string resultado_busqueda = codigo_sicop == "20" ? "Encontrado con error" : "Encontrado ok: " + facturaenarchivo;
+                            string resultado_busqueda = codigo_sicop != "0" ? "Encontrado con error" : "Encontrado ok: " + facturaenarchivo;
 
-                            //Codigo = 20 es un error de registro en SICOP enviamos el correo de Confirmacion con Código de Error.                      
-                            if (codigo_sicop == "20")
+                            //20231012
+                            //Codigo != 0 es un error de registro en SICOP enviamos el correo de Confirmacion con Código de Error.                      
+                            if (codigo_sicop != "0")
                             {
-                                EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, RutaArchivoGenerado, proceso, id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), "20: " + mensaje_sicop.Trim(), id_bitacora.ToString());
+                                EnviaCorreo(vinenarchivo.Trim(), idprospenarchivo, RutaArchivoGenerado, proceso, id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(),  codigo_sicop.Trim() + ": " + mensaje_sicop.Trim(), id_bitacora.ToString());
                             }
                             else
                             {
