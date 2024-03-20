@@ -1203,11 +1203,13 @@ namespace RegistraSalida
                                     rutareal = Application.StartupPath + "\\Procesados\\FLOTILLAS"; //+ tipoventa.Trim();
                                 }
 
+                                string aplicaFlotilla = this.objDB.ConsultaUnSoloCampo("SELECT aplicaFlotilla FROM SICOP_APLICAFLOTILLA WHERE idAgenciaPortal ='" + id_agencia.Trim() + "'").Trim();
+
                                 //20200514
-                                if (!isIntercambio && !isFlotilla)
+                                if ((!isIntercambio && !isFlotilla) || (isFlotilla && aplicaFlotilla == "1"))
                                 {
                                     rutareal = tipo_auto.Trim() == "Seminuevo" ? CarpetaRemota + "\\SEMINUEVOS" : "";
-                                }
+                                };
 
                                 nuevaruta = rutareal.Trim() == "" ? nuevaruta.Trim() : rutareal.Trim() + "\\" + ArchivoRenombrado.Trim();
 
@@ -1247,7 +1249,7 @@ namespace RegistraSalida
                                         Archivo.Delete();
                                     }
 
-                                if (!isIntercambio && !isFlotilla)
+                                if ((!isIntercambio && !isFlotilla) || (isFlotilla && aplicaFlotilla == "1"))
                                 {
                                     if (idprospenarchivo.Trim() != "")
                                     {
