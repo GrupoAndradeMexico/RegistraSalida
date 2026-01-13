@@ -84,7 +84,8 @@ namespace RegistraSalida
 
         string ConnectionString = System.Configuration.ConfigurationManager.AppSettings["ConnectionString"];
         ConexionBD objDB = null;
-        
+        ConexionBD objDBCentralizacion = null;
+
         //20150429 string RutaEjecutableBPro = System.Configuration.ConfigurationSettings.AppSettings["RutaEjecutableBPro"];
         //20150429 string DirectorioArchivosSICOP = System.Configuration.ConfigurationSettings.AppSettings["DirectorioArchivosSICOP"]; = carpeta_local_ventas
         //20150429 string Mascara = System.Configuration.ConfigurationSettings.AppSettings["Mascara"];
@@ -232,7 +233,7 @@ namespace RegistraSalida
                                 {
                                     //"C:\Users\omorales\Desktop\Business Pro SICOP.exe" SICOP GMI GAZM_ZARAGOZA Exporta C:\SiCoP\Generar\ SICOP_PROSPECTOS_TEMP_DMS.TXT 3N1CK3CD9DL259265 1000 25832
                                     //"C:\Users\omorales\Desktop\Business Pro SICOP.exe" SICOP GMI GAZM_ZARAGOZA Exporta C:\SiCoP\Generar\ SICOP_PROSPECTOS_TEMP_DMS.TXT 3N1CK3CD9DL259265
-                                    Comando = string.Format(Comando, Sicop, UsuarioBPRo1, BDBPRo1, Sentido, DirectorioArchivosSICOP.Trim(), "parametro_ocioso.txt", CodigoLeido.Trim());
+                                    Comando = string.Format(Comando, Sicop, UsuarioBPRo1, "123_GAZM_Zaragoza"/*BDBPRo1*/, Sentido, DirectorioArchivosSICOP.Trim(), "parametro_ocioso.txt", CodigoLeido.Trim());
                                     LanzaEjecucion(Comando); //lo deja en una sola carpeta.                                 
                                     Utilerias.WriteToLog("Se ejecutó: " + Comando, "ProcesaBitacora", Application.StartupPath + "\\" + this.NombreArchivoLog.Trim());
                                     //Esperamos un minuto para que le de tiempo a la interfaz a crear el archivo.
@@ -1188,10 +1189,44 @@ namespace RegistraSalida
                             {
                                 FileInfo Archivo = new FileInfo(ArchivoRenombrado);
                                 ArchivoRenombrado = Archivo.Name.Trim();
-                                string nuevaruta = CarpetaRemota + "\\" + ArchivoRenombrado.Trim();
                                 string rutareal = ""; //ConsultaCarpetaDestino(idprospenarchivo.Trim()); //20200514
                                 bool isIntercambio = false;
                                 bool isFlotilla = false;
+
+                                string ConnectionStringCentralizacion = System.Configuration.ConfigurationManager.AppSettings["ConnectionStringCentralizacion"];
+                                objDBCentralizacion = new ConexionBD(ConnectionStringCentralizacion);
+
+                                // CarpetaRemota base (empresa-sucursal) ya viene de SICOPCONFIGXMAQUINA
+                                string carpetaBase = (CarpetaRemota ?? "").Trim();
+                                string idEmpresaCentralizacion = this.objDB.ConsultaUnSoloCampo("SELECT suc_idsucursal FROM SICOP_AGENCIA_SUCURSAL WHERE id_agencia = '" + id_agencia.Trim() + "'");
+                                string query = "SELECT ID_CANALVENTA FROM DIG_FACTURAAUX where suc_idsucursal = " + idEmpresaCentralizacion + "AND vte_serie = '" + vinenarchivo + "' AND vte_docto = '" + factura + "' AND proceso = 'venta'";
+                                string canalByUnidad = this.objDBCentralizacion.ConsultaUnSoloCampo(query);
+
+                                if (!IsNullOrWhiteSpaceCompat(canalByUnidad))
+                                {
+                                    string agencia = (id_agencia ?? "").Trim().Replace("'", "''");
+                                    string canalEsc = canalByUnidad.Replace("'", "''");
+
+                                    string qPv =
+                                        "SELECT TOP 1 carpeta_remota " +
+                                        "FROM dbo.SICOPCONFIG_PV_CANAL " +
+                                        "WHERE activo = 1 " +
+                                        "  AND id_agencia = '" + agencia + "' " +
+                                        "  AND '" + canalEsc + "' LIKE '%' + marcadorCanal + '%' " +
+                                        "ORDER BY prioridad ASC";
+
+                                    string carpetaPv = (this.objDB.ConsultaUnSoloCampo(qPv) ?? "").Trim();
+
+                                    // Si hay match, usa PV. Si no, queda base.
+                                    CarpetaRemota = !IsNullOrWhiteSpaceCompat(carpetaPv) ? carpetaPv : carpetaBase;
+                                }
+                                else
+                                {
+                                    CarpetaRemota = carpetaBase;
+                                }
+
+                                string nuevaruta = CarpetaRemota + "\\" + ArchivoRenombrado.Trim();
+
                                 if (tipoventa.IndexOf("INTERCAMBIOS")>-1) 
                                 {
                                     isIntercambio = true;
@@ -1959,6 +1994,11 @@ namespace RegistraSalida
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private static bool IsNullOrWhiteSpaceCompat(string s)
+        {
+            return s == null || s.Trim().Length == 0;
         }
     }
 }
