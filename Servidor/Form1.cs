@@ -233,7 +233,7 @@ namespace RegistraSalida
                                 {
                                     //"C:\Users\omorales\Desktop\Business Pro SICOP.exe" SICOP GMI GAZM_ZARAGOZA Exporta C:\SiCoP\Generar\ SICOP_PROSPECTOS_TEMP_DMS.TXT 3N1CK3CD9DL259265 1000 25832
                                     //"C:\Users\omorales\Desktop\Business Pro SICOP.exe" SICOP GMI GAZM_ZARAGOZA Exporta C:\SiCoP\Generar\ SICOP_PROSPECTOS_TEMP_DMS.TXT 3N1CK3CD9DL259265
-                                    Comando = string.Format(Comando, Sicop, UsuarioBPRo1, "123_GAZM_Zaragoza"/*BDBPRo1*/, Sentido, DirectorioArchivosSICOP.Trim(), "parametro_ocioso.txt", CodigoLeido.Trim());
+                                    Comando = string.Format(Comando, Sicop, UsuarioBPRo1, BDBPRo1, Sentido, DirectorioArchivosSICOP.Trim(), "parametro_ocioso.txt", CodigoLeido.Trim());
                                     LanzaEjecucion(Comando); //lo deja en una sola carpeta.                                 
                                     Utilerias.WriteToLog("Se ejecutó: " + Comando, "ProcesaBitacora", Application.StartupPath + "\\" + this.NombreArchivoLog.Trim());
                                     //Esperamos un minuto para que le de tiempo a la interfaz a crear el archivo.
