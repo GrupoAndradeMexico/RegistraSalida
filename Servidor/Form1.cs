@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -1201,6 +1201,7 @@ namespace RegistraSalida
                                 string idEmpresaCentralizacion = this.objDB.ConsultaUnSoloCampo("SELECT suc_idsucursal FROM SICOP_AGENCIA_SUCURSAL WHERE id_agencia = '" + id_agencia.Trim() + "'");
                                 string query = "SELECT ID_CANALVENTA FROM DIG_FACTURAAUX where suc_idsucursal = " + idEmpresaCentralizacion + "AND vte_serie = '" + vinenarchivo + "' AND vte_docto = '" + factura + "' AND proceso = 'venta'";
                                 string canalByUnidad = this.objDBCentralizacion.ConsultaUnSoloCampo(query);
+                                string conexionSeekop = "";
 
                                 if (!IsNullOrWhiteSpaceCompat(canalByUnidad))
                                 {
@@ -1219,6 +1220,16 @@ namespace RegistraSalida
 
                                     // Si hay match, usa PV. Si no, queda base.
                                     CarpetaRemota = !IsNullOrWhiteSpaceCompat(carpetaPv) ? carpetaPv : carpetaBase;
+
+                                    string qPvC =
+                                        "SELECT TOP 1 conexionSeekop " +
+                                        "FROM dbo.SICOPCONFIG_PV_CANAL " +
+                                        "WHERE activo = 1 " +
+                                        "  AND id_agencia = '" + agencia + "' " +
+                                        "  AND '" + canalEsc + "' LIKE '%' + marcadorCanal + '%' " +
+                                        "ORDER BY prioridad ASC";
+                                    string dataConexionSeekop = (this.objDB.ConsultaUnSoloCampo(qPvC) ?? "").Trim();
+                                    conexionSeekop = !IsNullOrWhiteSpaceCompat(dataConexionSeekop) ? dataConexionSeekop : "";
                                 }
                                 else
                                 {
@@ -1291,7 +1302,7 @@ namespace RegistraSalida
                                         if (!this.dicHilos.ContainsKey(vinenarchivo.Trim()))
                                         { //No existe un hilo para esta orden de compra
                                           //hilogenerico = new Thread(new ThreadStart(SensaCambioEstatus));
-                                            Thread hilogenericolocal = new Thread(() => SensaResultadoCargaEnSicop(id_bitacora, factura, vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim()));
+                                            Thread hilogenericolocal = new Thread(() => SensaResultadoCargaEnSicop(id_bitacora, factura, vinenarchivo.Trim(), idprospenarchivo, Application.StartupPath + "\\Procesados\\" + ArchivoRenombrado.Trim(), "procesaArchivoGeneradoporBPro", id_maquina, NumeroSucursal, strIPMaquina, strNombreMaquina, strEnviar, tipoventa.Trim(), conexionSeekop));
                                             //hilogenerico.Name = Folio_Operacion.Trim();
                                             hilogenericolocal.IsBackground = true;
                                             hilogenericolocal.Start();
@@ -1697,7 +1708,7 @@ namespace RegistraSalida
         /// <param name="strNombreMaquina"></param>
         /// <param name="strEnviar"></param>
         /// <param name="tipoventa"></param>
-        private void SensaResultadoCargaEnSicop(string id_bitacora, string facturaenarchivo,string vinenarchivo,string idprospenarchivo,string RutaArchivoGenerado, string proceso,string id_maquina,string NumeroSucursal,string strIPMaquina,string strNombreMaquina,string strEnviar,string tipoventa)
+        private void SensaResultadoCargaEnSicop(string id_bitacora, string facturaenarchivo,string vinenarchivo,string idprospenarchivo,string RutaArchivoGenerado, string proceso,string id_maquina,string NumeroSucursal,string strIPMaquina,string strNombreMaquina,string strEnviar,string tipoventa, string conexionSeekop)
         {
             bool Consulta = true;
             int veces=0;
@@ -1706,9 +1717,15 @@ namespace RegistraSalida
 
             try
             {
-
-                Q = "Select conexion_sicop from SICOPCONFIGXMAQUINA WHERE numero_sucursal = '"  + NumeroSucursal.Trim()  +  "'";   //id_maquina=" + id_maquina; 20220921
-                string conexion = this.objDB.ConsultaUnSoloCampo(Q);
+                string conexion = "";
+                if (conexionSeekop == null || conexionSeekop == "")
+                {
+                    Q = "Select conexion_sicop from SICOPCONFIGXMAQUINA WHERE numero_sucursal = '" + NumeroSucursal.Trim() + "'";   //id_maquina=" + id_maquina; 20220921
+                    conexion = this.objDB.ConsultaUnSoloCampo(Q);
+                }
+                else {
+                    conexion = conexionSeekop;
+                }
 
                 ConexionBD objDBSicop = new ConexionBD(conexion.Trim());
 
